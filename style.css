@@ -1,0 +1,404 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+    
+}
+body{
+    background:#0a0a0af8;
+    color: #fff;
+
+
+
+}
+.namee span{
+    color: #f80000;
+
+}
+.namee{
+    font-size: 2.36rem;
+}
+#head{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url(ChatGPT\ anime1.png);
+   
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+#l1{
+    width: 11rem;
+    height: 4.7rem;
+}
+.container{
+padding: 0.5rem;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0.4rem;
+    margin-top: 0;
+    margin-right: 0.6rem;
+}
+nav ul li a::after{
+content: "";
+width: 0;
+height: 3px;
+background: #e22626e3;
+position: absolute;
+left: 0;
+top: 1.2rem;
+transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin: 3rem;
+   
+
+}
+.header-text p{
+    position: relative;
+    font-size: 1.3rem;
+    margin-top: 4rem;
+    margin-left: 0.3rem;
+}
+.header-text h1{
+    font-size: 4rem;
+    margin-top: 2rem;
+}
+.name{
+    color: #f80000 ;
+}
+#about-img{
+    width: 30rem;
+    height: 39rem;
+}
+#about{
+    padding: 2rem;
+    margin-top: 3rem;
+
+}
+.row1{
+    display: flex;
+    justify-content:space-between ;
+    flex-wrap: wrap;
+    
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 2rem;
+}
+.about-col-2{
+    flex-basis: 48%;
+    margin-top: 1rem;
+}
+.sub-title{
+   font-size:2.2rem ;
+}
+.sub-title span{
+    color: #f80000;
+}
+.about-col-2 p span{
+    color: #f80000;
+}
+.tab-titles{
+    display: flex;
+      margin: 1rem;
+    margin-top:1rem ;
+    margin-left: 0;
+    margin-bottom: 0;
+  
+    gap: 5rem;
+}
+.tab-links{
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+
+}
+.tab-links::after{
+content: "";
+width: 0;
+height: 0.2rem;
+background: #f21313fa;
+position: absolute;
+left: 0;
+bottom: -0.25rem;
+transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 70%;
+}
+.tab-contents span{
+    color: #f80000;
+
+}
+.tab-contents{
+    margin: 1rem;
+    margin-top: 1.1rem;
+    margin-left: 0;
+}
+.tab-contents ul li{
+ list-style: none;
+ margin: 1rem;
+ margin-left: 0;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+/* ------serviecs-------- */
+#services{
+    padding: 1.8rem;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+    grid-gap:5rem ;
+    margin-top: 1.7rem;
+}
+.container2{
+    margin: 2rem;
+    margin-top: 0;
+}
+.services-list div{
+    background: #2a2929ca;
+    padding: 1rem;
+    border-radius: 1rem;
+    transition: background 0.5s,transform 0.5s ;
+}
+.services-list div i{
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+}
+.services-list div h2 span{
+    color: #f80000;
+}
+a{
+    text-decoration: none;
+}
+.services-list div a{
+    margin-top:0.8rem;
+    color: rgb(152, 148, 148);
+    display: inline-block;
+}
+.services-list div:hover{
+    background: #f80000c6;
+    transform: translateY(-1.3rem);
+}
+/* --------------------portfolio------------------------ */
+#portfolio{
+    padding: 1.8rem ;
+    position: relative;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+    grid-gap:5rem ;
+    margin-top: 0rem;
+    margin: 1.7rem;
+
+}
+.work{
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    transition: transform 0.5s;
+}
+.work img{
+    width: 100%;
+    border-radius: 1rem;
+    display: block;
+    height: 20rem;
+
+
+}
+.container3 h1{
+    margin-left: 1.8rem;
+}
+.layer{
+    padding: 0 0.5rem;
+    width: 100%;
+    height: 0;
+    background:linear-gradient(red,black);
+    border-radius: 1rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    text-align: center;
+    transition: height 0.5s;
+
+
+}
+.layer h2 span{
+    color: #f80000;
+}
+.layer h2{
+    margin-bottom: 1.3rem;
+}
+.layer p{
+    font-weight: 100;
+}
+.work:hover {
+    transform: scale(1.06);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.a1{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.2rem;
+}
+.btn{
+     
+    border: 0.1rem solid red;
+    display: block;
+    margin: 3rem auto;
+    width: fit-content;
+    padding: 0.5rem ;
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+    border-radius: 1rem;
+    transition:  background 0.5s, transform 0.5s ;
+   }
+   .btn:hover{
+    transform:translateY(-0.6rem);
+    background: #f80000;
+   }
+   /* ------------contact------------ */
+   .row4{
+    display: flex;
+    margin-left: 1.24rem;
+ 
+   
+    
+   }
+#contact{
+    position: relative;
+    padding: 0.7rem;
+}
+.container4{
+    margin-top: 0rem;
+    margin-left:1.8rem;
+}
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+    
+}
+.contact-left p{
+    margin-top: 1.5rem;
+   
+}
+.contact-left p i{
+    color: red;
+   margin-right: 0.5rem;
+}
+.social-icons{
+    margin-top: 1.5rem;
+}
+.social-icons i{
+    color: white;
+    transition: transform 0.3s,color 0.3s;
+
+}
+.social-icons a{
+    font-size: 1.6rem;
+    margin: 1rem;
+    
+    margin-left: 0;
+    
+
+}
+.social-icons i:hover{
+    transform: translateY(-0.3rem);
+    color: red;
+}
+.a2{
+    color: white;
+    margin-left: 0;
+    margin-top: 1.5rem;
+}
+button{
+    background-color:#0a0a0af8 ;
+    color: #fff;
+}
+.contact-right form{
+    width: 100%;
+}
+form input,form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color: #262626;
+    padding: 1rem;
+    margin: 1rem 0;
+    margin-top: 0;
+    border-radius: 1rem;
+}
+form input{
+color: #fff;
+}
+form a3{
+    cursor: pointer;
+    
+}
+.a3{
+    margin-top: 0;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 0rem;
+    margin-top: 0;
+}
+.copyright i{
+    color: red;
+}
+html{
+    scroll-behavior: smooth;
+}
+#msg{
+   
+ margin-top: 0;
+ margin-left: 4rem;
+ margin-bottom: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
